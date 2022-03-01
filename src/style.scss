@@ -21,13 +21,15 @@ p {
 :root {
   --main-bg-color: #99b654;
   --secondary-bg-color: #5a6b61;
-  --light-theme: #f1f1f1;
+  --white: #f8f9fa;
   --gray: #dee2e6;
+  --bg-light: #f1f1f1;
 }
 
 body {
   font-family: "Nunito", sans-serif;
   color: #161c2d;
+  background-color: var(--bg-light);
 }
 
 h1,
@@ -44,7 +46,7 @@ h1 {
   line-height: 1.2;
   font-size: 36px;
   font-weight: 600;
-  color: var(--light-theme);
+  color: var(--white);
 }
 
 h2 {
@@ -112,7 +114,7 @@ section {
 .nav__link {
   margin: 0 8px;
   padding: 8px;
-  color: var(--light-theme);
+  color: var(--white);
   transition: all 0.5s;
 }
 
@@ -140,13 +142,6 @@ section {
 .card {
   border-radius: 18px;
   box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%), 0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%);
-}
-
-.section__card {
-  position: relative;
-  padding: 24px;
-  margin-top: -80px;
-  background-color: var(--light-theme);
 }
 
 .portfolio__gallery {
@@ -218,3 +213,7 @@ a .gallery__item {
   height: 16px;
   width: 16px;
 }
+
+
+
+@import "info-card.scss";
