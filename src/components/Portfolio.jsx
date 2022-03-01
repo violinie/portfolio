@@ -7,7 +7,7 @@ export default function Portfolio() {
       <div className="portfolio__gallery">
         <div className="gallery__item card">
           <a href="https://investuj-do-pole.vercel.app/">
-            <img src="https://source.unsplash.com/random/240?invest" alt="" class="gallery__item-img" />
+            <img src="https://source.unsplash.com/random/240?invest" alt="" className="gallery__item-img" />
           </a>
         </div>
         <div className="gallery__item card">
@@ -32,7 +32,7 @@ export default function Portfolio() {
         </div>
         <div className="gallery__item card">
           <a href="https://www.davidcrystal.com">
-            <img src="https://source.unsplash.com/random/240?writer" alt="" class="gallery__item-img" />
+            <img src="https://source.unsplash.com/random/240?writer" alt="" className="gallery__item-img" />
           </a>
         </div>
         <div className="gallery__item card">

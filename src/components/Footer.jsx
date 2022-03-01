@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div class="footer">
-      <div class="elevator">
+    <div className="footer">
+      <div className="elevator">
         <svg
-          class="sweet-svg"
+          className="sweet-svg"
           xmlns="http://www.w3.org/2000/svg"
           // xmlns:xlink="http://www.w3.org/1999/xlink"
           version="1.1"
