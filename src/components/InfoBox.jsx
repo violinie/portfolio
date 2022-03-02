@@ -16,7 +16,7 @@ function InfoCard() {
           Languages: <span className="text--muted">Czech, English</span>
         </div>
       </div>
-      <div>
+      <div className="info-card__profile">
         <div className="info-card__typed">
           I Am <span className="" data-elements="Web Developer, Gamer"></span>
           <span id="typed" className="typed">

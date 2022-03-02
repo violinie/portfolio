@@ -1,45 +1,16 @@
 import React from "react";
+import PortfolioItem from "./PortfolioItem";
+import data from "../data";
 
 export default function Portfolio() {
+  const item = data.map((item) => {
+    return <PortfolioItem key={item.id} logoUrl={item.logoUrl} hashtags={item.hashtags} imageUrl={item.imageUrl} linkUrl={item.linkUrl} filter={item.filter} />;
+  });
   return (
-    <section className="container portfolio" id="portfolio">
-      <h2>My Work</h2>
-      <div className="portfolio__gallery">
-        <div className="gallery__item card">
-          <a href="https://investuj-do-pole.vercel.app/">
-            <img src="https://source.unsplash.com/random/240?invest" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://staav.cz/">
-            <img src="https://source.unsplash.com/random/240?build" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://pizza-veranda.cz">
-            <img src="https://source.unsplash.com/random/240?pizza" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://www.brightwater.cz/">
-            <img src="https://source.unsplash.com/random/240?water" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://www.optikacivice.cz">
-            <img src="https://source.unsplash.com/random/240?optica" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://www.davidcrystal.com">
-            <img src="https://source.unsplash.com/random/240?writer" alt="" className="gallery__item-img" />
-          </a>
-        </div>
-        <div className="gallery__item card">
-          <a href="https://www.drivewearlens.com">
-            <img src="https://source.unsplash.com/random/240?glasses" alt="" className="gallery__item-img" />
-          </a>
-        </div>
+    <section className="portfolio bg-wrapper" id="portfolio">
+      <div className="container">
+        <h2>My Work</h2>
+        <div className="portfolio__gallery">{item}</div>
       </div>
     </section>
   );

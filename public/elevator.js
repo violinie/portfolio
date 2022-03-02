@@ -2,7 +2,7 @@ window.onload = function () {
   var elementButton = document.querySelector(".elevator");
   var elevator = new Elevator({
     element: elementButton,
-    mainAudio: "./music/elevator.mp3", // Music from http://www.bensound.com/
+    mainAudio: "./music/elevator.mp3", //\
     endAudio: "./music/ding.mp3",
     startCallback: function () {
       // is called, when the elevator starts moving

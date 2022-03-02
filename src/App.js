@@ -9,6 +9,7 @@ function App() {
     <>
       <Header />
       <InfoCard />
+      <section className="section"></section>
       <Portfolio />
       <Footer />
     </>

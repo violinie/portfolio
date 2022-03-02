@@ -27,6 +27,12 @@
   font-weight: 600;
 }
 
+.info-card__profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .bor-bottom {
   padding: 0px;
   border: 0.5px dashed #d4dae1;

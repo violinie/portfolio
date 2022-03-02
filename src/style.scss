@@ -21,6 +21,7 @@ p {
 :root {
   --main-bg-color: #99b654;
   --secondary-bg-color: #5a6b61;
+  --dark: #2a333e;
   --white: #f8f9fa;
   --gray: #dee2e6;
   --bg-light: #f1f1f1;
@@ -70,7 +71,11 @@ section {
 
 .container {
   margin: 0 auto;
-  width: 70%;
+  width: 1070px;
+}
+
+.bg-wrapper {
+  background-color: var(--dark);
 }
 
 .header {
@@ -96,6 +101,8 @@ section {
 
 .header__nav {
   padding: 20px 0;
+  position: sticky;
+  top: 0;
 }
 
 .header__nav-items {
@@ -141,24 +148,25 @@ section {
 
 .card {
   border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
   box-shadow: -0.0625rem 0 0.625rem 0 rgb(0 0 0 / 7%), 0.3125rem 1.25rem 2.5rem 0 rgb(0 0 0 / 4%);
 }
 
 .portfolio__gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
 }
 
 .gallery__item {
-  height: 300px;
   overflow: hidden;
+  position: relative;
+  height: 22rem;
 }
 
 .gallery__item-img {
+  height: 22rem;
   width: 100%;
-  min-height: 350px;
   object-fit: cover;
 }
 
@@ -214,6 +222,24 @@ a .gallery__item {
   width: 16px;
 }
 
+.portfolio__logo {
+  position: absolute;
+  width: 100%;
+  padding: 0 2em;
+  bottom: 5rem;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 
+.filter {
+  //background: rgba(90, 107, 97, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 @import "info-card.scss";
